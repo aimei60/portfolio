@@ -13,7 +13,7 @@ function NavBar () {
                     <a href="#contact" className="nav-link">Contact</a>
                 </nav>
                 </div>
-                <button className="theme-btn">☀︎</button>
+                <button className="theme-btn">⏾</button>
             </div>
         </header>
 
