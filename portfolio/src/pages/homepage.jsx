@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import "../css/homepage.css"
 import me from "../images/kitten.webp"
-import footer from "../components/footer";
+import Footer from "../components/footer";
 
 function Homepage() {
     return (
@@ -81,6 +81,7 @@ function Homepage() {
                 </div>
             </div>
         </section>
+        <Footer />
         </>
     )
 
