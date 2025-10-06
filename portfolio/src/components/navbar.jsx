@@ -1,16 +1,17 @@
 //navbar
+import { Link } from "react-router-dom";
 import "../css/NavBar.css"
 
 function NavBar () {
     return <header className="header">
         <div className="header-inner">
             <div className="left">
-                <a href="/" className="logo">A.dev</a>
+                <Link to="/" className="logo">A.dev</Link>
                 <nav className="nav">
-                    <a href="#home" className="nav-link">Home</a>
-                    <a href="#projects" className="nav-link">Projects</a>
-                    <a href="#events" className="nav-link">Events & Community</a>
-                    <a href="#contact" className="nav-link">Contact</a>
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/projects" className="nav-link">Projects</Link>
+                    <Link to="/events" className="nav-link">Events & Community</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                 </nav>
                 </div>
                 <button className="theme-btn">⏾</button>

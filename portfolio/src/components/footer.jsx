@@ -1,4 +1,5 @@
 import "../css/footer.css"
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return <div className="footer">
@@ -7,11 +8,11 @@ function Footer() {
                 <div className="copyright">© 2025 A. All rights reserved.</div>
             </div>
                 <div className="right-side">
-                    <a href="#contact" className="contact">Contact</a>
+                    <Link to="/contact" className="contact">Contact</Link>
                     <div className="links">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="icon" /></a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a target="_blank" rel="noopener noreferrer">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" className="icon" /></a>
                     </div>
                 </div>

@@ -16,8 +16,8 @@ function Homepage() {
                 <p className="intro">Blending creativity and technology, I thrive on bringing ideas to life,
                 solving challenges and continuous learning along the way.</p>
                 <div className="buttons">
-                <a href="#contact" className="btn btn-primary"><span className="btn-icon">✉️</span> Contact Me</a>
-                <a href="#projects" className="btn btn-secondary"><span className="btn-icon">📂</span> View Projects</a>
+                <a className="btn btn-primary"><span className="btn-icon">✉️</span> Contact Me</a>
+                <a className="btn btn-secondary"><span className="btn-icon">📂</span> View Projects</a>
                 </div>
                 <div className="social-links">
                 <a href="" target="_blank" rel="noopener noreferrer">
