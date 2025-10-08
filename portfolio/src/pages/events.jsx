@@ -36,7 +36,6 @@ function Events() {
   } else if (activeCategory === "Hackathons") {
     hackathonActive = "active";
   }
-
   let hackathonContent = null;
   if (showHackathon) {
     hackathonContent = (
@@ -46,26 +45,24 @@ function Events() {
           <div className="description-container">
             <div className="date">March 2024</div>
             <div className="location">London, UK</div>
-            <div className="title">AI Hackathon</div>
+            <div className="title-event">AI Hackathon</div>
             <div className="organiser">Encode</div>
-            <div className="description"></div>
+            <div className="description-event"></div>
           </div>
         </div>
-
         <div className="event-container">
           <div className="photo"></div>
           <div className="description-container">
             <div className="date">March 2025</div>
             <div className="location">London, UK</div>
-            <div className="title">Quantum Curiosity: Creative Hackathon</div>
+            <div className="title-event">Quantum Curiosity: Creative Hackathon</div>
             <div className="organiser">Urban MBA</div>
-            <div className="description"></div>
+            <div className="description-event"></div>
           </div>
         </div>
       </>
     );
   }
-
   let workshopContent = null;
   if (showWorkshop) {
     workshopContent = (
@@ -75,26 +72,24 @@ function Events() {
           <div className="description-container">
             <div className="date">May 2025</div>
             <div className="location">London, UK</div>
-            <div className="title">AI Essentials Workshop</div>
+            <div className="title-event">AI Essentials Workshop</div>
             <div className="organiser">Urban MBA</div>
-            <div className="description"></div>
+            <div className="description-event"></div>
           </div>
         </div>
-
         <div className="event-container">
           <div className="photo"></div>
           <div className="description-container">
             <div className="date">July 2025</div>
             <div className="location">London, UK</div>
-            <div className="title">Video & AI Workshop</div>
+            <div className="title-event">Video & AI Workshop</div>
             <div className="organiser">Urban MBA</div>
-            <div className="description"></div>
+            <div className="description-event"></div>
           </div>
         </div>
       </>
     );
   }
-
   let communityContent = null;
   if (showCommunity) {
     communityContent = (
@@ -103,9 +98,9 @@ function Events() {
         <div className="description-container">
           <div className="date">Monthly</div>
           <div className="location">Canterbury / Folkestone, Kent</div>
-          <div className="title">CodeHarbour</div>
+          <div className="title-event">CodeHarbour</div>
           <div className="organiser">Alex C.</div>
-          <div className="description"></div>
+          <div className="description-event"></div>
         </div>
       </div>
     );
@@ -122,7 +117,6 @@ function Events() {
           <div className={workshopActive} onClick={() => setActiveCategory("Workshops")}>Workshops</div>
           <div className={hackathonActive} onClick={() => setActiveCategory("Hackathons")}>Hackathons</div>
         </div>
-
         <div className="events-list">
           {hackathonContent}
           {workshopContent}

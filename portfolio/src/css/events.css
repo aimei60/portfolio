@@ -21,7 +21,7 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 2rem;
-
+  text-decoration: underline;
 }
 
 .event-selector {
@@ -92,13 +92,13 @@
 
 .date,
 .location,
-.title,
+.title-event,
 .organiser,
-.description {
+.description-event {
   font-size: 1rem;
 }
 
-.title {
+.title-event {
   font-size: 1.3rem;
   font-weight: 700;
   color: #111;
@@ -110,7 +110,7 @@
   color: #5a5a5a;
 }
 
-.description {
+.description-event {
   color: #333;
   margin-top: 0.5rem;
   line-height: 1.5;

@@ -5,7 +5,6 @@ function Footer() {
     return <div className="footer">
         <div className="footer-inner-container">
             <div className="left-side">
-                <div className="copyright">© 2025 A. All rights reserved.</div>
             </div>
                 <div className="right-side">
                     <Link to="/contact" className="contact">Contact</Link>

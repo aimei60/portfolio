@@ -10,12 +10,18 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center,
-  #ffe5d9 0%,   /* peach-pink core */
-  #ffc9c9 40%,  /* light coral */
-  #fff2ed 100%);  /* fade to off-white */
+  background-color: #fff6f9;
+  background-image: radial-gradient(
+    circle at center,
+    #fcd4d6 30%,
+    rgba(255, 198, 208, 0.45) 40%,
+    rgba(255, 236, 241, 0.18) 80%,
+    rgba(255, 236, 241, 0.10) 90%,
+    rgba(255, 187, 204, 0) 100%
+  );
   background-attachment: fixed;
 }
+
 
 .homepage-inner-container {
   max-width: 46rem;
@@ -41,12 +47,13 @@ html, body {
   align-items: center;
 }
 
-.title {
+.welcome-title {
   font-size: clamp(2.25rem, 6vw, 3.5rem);
   line-height: 1.15;
   margin: 0 0 1rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  color: #656363;
 }
 
 .description {
@@ -124,7 +131,7 @@ html, body {
 
 /*2. skills section */
 .skills-section {
-  background: #fde3e3;
+  background: #ffebeb;
   padding-block: 2rem;
   color: #111111;
 }
@@ -197,4 +204,54 @@ html, body {
   .skill-card { padding: 1.25rem; }
   .skill-title { font-size: 1rem; }
   .skill-list { font-size: 0.875rem; }
+}
+
+/*dark mode*/
+body {
+  background: #fff6f9;
+  color: #111111;
+}
+
+* {
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
+
+.dark .homepage-container {
+  background-color: #000;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(91,124,255,0.55) 20%,
+    rgba(91,124,255,0.30) 45%,
+    rgba(82, 116, 249, 0.15) 75%,
+    rgba(91,124,255,0.06) 88%,
+    rgba(91,124,255,0.00) 100%
+  );
+  background-attachment: fixed;
+}
+
+.dark .welcome-title {
+  color: #c3c3c3;
+}
+
+.dark .description {
+  color: #c3c3c3;
+}
+
+.dark .intro {
+  color: #c3c3c3;
+}
+
+.dark .social-links .icon {
+  filter: brightness(0) invert(1) contrast(1.1); /*inverts black to white*/
+}
+
+.dark .btn-primary {
+  background: #334db5;
+  color: #c3c3c3
+}
+
+.dark .btn-secondary {
+  background: #334db5;
+  color: #c3c3c3
+
 }

@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import "../css/homepage.css"
 import me from "../images/kitten.webp"
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 function Homepage() {
     return (
@@ -11,13 +12,13 @@ function Homepage() {
             <div className="homepage-inner-container">
             <img className="image" src={me} alt="Portrait of A" />
             <div className="intro-description">
-                <h1 className="title">Welcome, I am A</h1>
+                <div className="welcome-title">Welcome, I am Aimei!</div>
                 <p className="description">Junior Software Engineer | Fullstack & CI/CD</p>
                 <p className="intro">Blending creativity and technology, I thrive on bringing ideas to life,
                 solving challenges and continuous learning along the way.</p>
                 <div className="buttons">
-                <a className="btn btn-primary"><span className="btn-icon">✉️</span> Contact Me</a>
-                <a className="btn btn-secondary"><span className="btn-icon">📂</span> View Projects</a>
+                <Link to="/contact" className="btn btn-primary"><span className="btn-icon">✉️</span> Contact Me</Link>
+                <Link to="/projects" className="btn btn-secondary"><span className="btn-icon">📂</span> View Projects</Link>
                 </div>
                 <div className="social-links">
                 <a href="" target="_blank" rel="noopener noreferrer">
